@@ -28,4 +28,9 @@
     [portfolio addObject: self];
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat: @"stock (%f,%f,%d) originally cost %f and now has a value of %f", [self currentSharePrice], [self purchaseSharePrice], [self numberOfShares], [self costInDollars], [self valueInDollars]];
+}
+
 @end

@@ -82,6 +82,13 @@ int main(int argc, const char * argv[])
         }
         
         
+        //but you should be able to override "description" in NSObject classes I think
+        
+        for (StockHolding *stock in allCurrentStocks){
+            NSLog(@"%@",stock);
+        }
+        
+        
 //        // create an instance of StockHolding
 //        StockHolding *stockholding = [[StockHolding alloc] init];
 //        
